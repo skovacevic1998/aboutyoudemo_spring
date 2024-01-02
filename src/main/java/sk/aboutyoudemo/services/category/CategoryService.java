@@ -1,8 +1,8 @@
-package sk.aboutyoudemo.services;
+package sk.aboutyoudemo.services.category;
 
 import org.springframework.stereotype.Service;
-import sk.aboutyoudemo.entity.Category;
-import sk.aboutyoudemo.repository.CategoryRepository;
+import sk.aboutyoudemo.entity.category.Category;
+import sk.aboutyoudemo.repository.category.CategoryRepository;
 
 import java.util.List;
 

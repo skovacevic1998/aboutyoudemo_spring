@@ -1,10 +1,10 @@
-package sk.aboutyoudemo.repository;
+package sk.aboutyoudemo.repository.category;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
-import sk.aboutyoudemo.entity.Category;
+import sk.aboutyoudemo.entity.category.Category;
 
 import java.util.List;
 

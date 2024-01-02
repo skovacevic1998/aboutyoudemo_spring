@@ -1,4 +1,4 @@
-package sk.aboutyoudemo.entity;
+package sk.aboutyoudemo.entity.category;
 
 import jakarta.persistence.*;
 
