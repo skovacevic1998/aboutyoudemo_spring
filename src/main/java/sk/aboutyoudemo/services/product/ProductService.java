@@ -1,10 +1,10 @@
 package sk.aboutyoudemo.services.product;
 
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 import sk.aboutyoudemo.entity.product.Product;
 import sk.aboutyoudemo.repository.product.ProductRepository;
-
-import java.util.List;
 
 @Service
 public class ProductService {
@@ -14,7 +14,8 @@ public class ProductService {
         this.productRepository = productRepository;
     }
 
-    public List<Product> getProductsByCategory(String categoryName){
-        return productRepository.findProductsByCategory(categoryName);
+    public Page<Product> getProductsByCategoryAndPage(String categoryForAPI, int page, int size){
+        PageRequest pageable = PageRequest.of(page, size);
+        return productRepository.findByProductCategory(categoryForAPI, pageable);
     }
 }

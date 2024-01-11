@@ -12,9 +12,9 @@ public class Category {
     private Long id;
 
     @Column(name = "category_label")
-    private String category_label; // Follows camelCase naming convention
+    private String category_label;
     @Column(name = "category_name")
-    private String category_name; // Follows camelCase naming convention
+    private String category_name;
     @Column(name = "tstamp")
     private Timestamp tstamp;
 
